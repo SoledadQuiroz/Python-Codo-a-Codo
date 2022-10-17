@@ -1,110 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
-</head>
+  </head>
 
-<body>
-    <header style="background-color:rgb(50, 159, 223);">
-        <nav>
-            <a style="background-color: rgb(87, 195, 214);" href="../index.html">Home</a>
-            <a style="background-color: rgb(87, 195, 214);" href="nosotros.html">Nosotros</a>
-            <a style="background-color: rgb(87, 195, 214);" href="contacto.html">Contacto</a>
-            <a style="background-color: rgb(87, 195, 214);" href="registro.html">Registrese</a>
-            <a style="background-color: rgb(87, 195, 214);" href="especialidades.html">Especialidades</a>
-            <h1 style="text-align: center;">Contacto</h1>
-        </nav>
-
+  <body>
+    <header class="header">
+      <nav>
+        <a class="TextoMenu" href="../index.html">Home</a>
+        <a class="TextoMenu" href="nosotros.html">Nosotros</a>
+        <a class="TextoMenu" href="contacto.html">Contacto</a>
+        <a class="TextoMenu" href="registro.html">Registro</a>
+        <a class="TextoMenu" href="especialidades.html">Especialidades</a>
+      </nav>
     </header>
 
     <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Formulario de contacto</title>
-  <link rel="stylesheet" type="text/css" href="contact-form.css">
-</head>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Formulario de contacto</title>
+        <link rel="stylesheet" type="text/css" href="contact-form.css" />
+      </head>
 
+      <body>
+        <div class="contact_form">
+          <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
-<body> 
-    
-  <div class="contact_form">
+            <form action="submeter-formulario.php" method="post">
+              <p>
+                <label for="nombre" class="colocar_nombre"
+                  >Nombre
+                  <span class="obligatorio">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="introducir_nombre"
+                  id="nombre"
+                  required="obligatorio"
+                  placeholder="Escribe tu nombre"
+                />
+              </p>
 
-    <div class="formulario">      
-      <h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+              <p>
+                <label for="email" class="colocar_email"
+                  >Email
+                  <span class="obligatorio">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="introducir_email"
+                  id="email"
+                  required="obligatorio"
+                  placeholder="Escribe tu Email"
+                />
+              </p>
 
+              <p>
+                <label for="telefone" class="colocar_telefono">Teléfono </label>
+                <input
+                  type="tel"
+                  name="introducir_telefono"
+                  id="telefono"
+                  placeholder="Escribe tu teléfono"
+                />
+              </p>
 
-          <form action="submeter-formulario.php" method="post">       
+              <p>
+                <label for="asunto" class="colocar_asunto"
+                  >Especialidad
+                  <span class="obligatorio">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="introducir_asunto"
+                  id="assunto"
+                  required="obligatorio"
+                  placeholder="Escribe un asunto"
+                />
+              </p>
 
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
+              <p>
+                <label for="mensaje" class="colocar_mensaje"
+                  >Consulta
+                  <span class="obligatorio">*</span>
+                </label>
+                <textarea
+                  name="introducir_mensaje"
+                  class="texto_mensaje"
+                  id="mensaje"
+                  required="obligatorio"
+                  placeholder="Deja aquí tu comentario..."
+                ></textarea>
+              </p>
 
-                <p>
-                  <label for="asunto" class="colocar_asunto">Especialidad
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Consulta
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+              <button type="submit" name="enviar_formulario" id="enviar">
+                <p>Enviar</p>
+              </button>
 
-                <p class="aviso">
-                  <span class="obligatorio"> Los campos </span> * son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
-
-</body>
-</html>
-
-
-    
-
-    <footer style="background-color:rgb(50, 159, 223);">
-        <div align="center">
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://ar.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            <br>
-            <p>Derechos reservados @2020</p>
-            <br>
+              <p class="aviso">
+                <span class="obligatorio"> Los campos </span> * son
+                obligatorios.
+              </p>
+            </form>
+          </div>
         </div>
-    </footer>
-</body>
 
+        <footer class="footer">
+          <div>
+            <br />
+            <p>Derechos reservados @2020</p>
+            <br />
+          </div>
+        </footer>
+      </body>
+    </html>
+  </body>
 </html>
