@@ -1,0 +1,84 @@
+:root {
+    /*------------------- PALETA DE COLORES ---------------------*/
+
+    /* paleta 1 */
+    --azul1: #5fa8d3;
+    --azul2: #1b4965;
+    --azul3: #62b6cb;
+    --azul4: #bee9e8;
+    --azul: #5fa8d3;
+    --verde5: #cae9ff;
+
+    /* paleta 3 */
+    --verde3A: #4B7F52;
+
+    --verde3C: #96E8BC;
+    --verde3D: #B6F9C9;
+    --verde3E: #C9FFE2;
+
+
+    /* paleta 1 */
+    --verde1: #2ECC71;
+    --verde2: #229954;
+    --verde3: #1E8449;
+    --verde4: #0E6655;
+    --verde5: #20B2AA;
+    --verde6: #3EB489;
+    --verde7: #0B5C4C;
+    --verde8: #00FF40;
+    --verde9: #00A693;
+    --verde10: #01796F;
+    --verde11: #01796F;
+    --verde12: #66CDAA;
+
+    /* paleta 2 */
+    --verde2A: #BCE784;
+    --verde2B: #5DD39E;
+    --azul: #348AA7;
+    --violeta1: #525174;
+    --violeta2: #513B56;
+
+    /* paleta 3 */
+    --verde3A: #4B7F52;
+    --verde3B: #7DD181;
+    --verde3C: #96E8BC;
+    --verde3D: #B6F9C9;
+    --verde3E: #C9FFE2;
+
+    /* colores fuentes */
+    --fuentePrin: black;
+    --fuenteAlt: white;
+    --gris1: #747474;
+
+    /*------------------- FONDOS ---------------------*/
+    --fondo_deg1: linear-gradient(180deg, rgba(0, 237, 100, 0.6783088235294117) 0%, rgba(255, 255, 255, 1) 42%);
+    --fondo_transparente: rgba(0, 0, 0, 0.4822303921568627);
+    /*------------------- SOMBRAS ---------------------*/
+    --sombra1: 5px 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------ FUENTES ---------------------------------*/
+@font-face {
+    font-family: "principal";
+    src: url("../recursos/fuentes/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "secundaria1";
+    src: url("../recursos/fuentes/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "secundaria2";
+    src: url("../recursos/fuentes/MADEOkineSansPERSONALUSE-Medium.otf");
+}
+
+@font-face {
+    font-family: "secundaria3";
+    src: url("../recursos/fuentes/TangoSans.ttf");
+}
+
+@font-face {
+    font-family: "secundaria4";
+    src: url("../recursos/fuentes/Telex-Regular.ttf");
+}
