@@ -1,0 +1,214 @@
+/*------------------------------ IMPORTS ---------------------------------*/
+
+@import url("variables.css");
+@import url("reset.css");
+@import url("headerNav.css");
+@import url("footer.css");
+
+/*------------------------------ LAYOUT GENERAL ---------------------------------*/
+/* vista movil como predeterminada*/
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 1% 94%;
+    height: 400vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+nav #inicio{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*------------------------ SECTION ---------------------------------*/
+
+section{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 26.66% 26.66% 26.66% 2%;
+    height: 100%;
+    width: 100%;
+}
+
+/*------------------------ INTRODUCCION ---------------------------*/
+
+section #introduccion{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "principal";
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#introduccion h2{
+    color: var(--azul2);
+    font-weight: bolder;
+    line-height: 150%;
+    font-size: 2.2rem;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 10px;
+}
+
+#introduccion p{
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 130%;
+    font-family: "secundaria1";
+}
+
+/*------------------------ ARTICLES ---------------------------*/
+
+/* ---------------Clase para los items de fondo verde*---------------*/
+.funciones_pag_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: var(--azul3);
+    text-align: center;
+}
+
+article img{
+    height: 250px;
+}
+
+.funciones_pag_1 h3 a{
+    font-family: "principal";
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--fuenteAlt);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.funciones_pag_1 p{
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "principal";
+    color: var(--fuenteAlt);
+    line-height: 150%;
+    font-size: 1.1rem;
+}
+
+/* ---------------Clase para los items de fondo blanco---------------*/
+.funciones_pag_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+article img{
+    height: 250px;
+}
+
+.funciones_pag_2 h3 a{
+    font-family: "principal";
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--azul3);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.funciones_pag_2 p{
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "principal";
+    color: var(--azul2);
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+/*------------------------------ MEDIA QUERIES ---------------------------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    section #introduccion{
+        padding-top: 20%;
+    }
+
+    section .funciones_pag_1 p, section .funciones_pag_2 p{
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (portrait tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    section #introduccion{
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    section #introduccion h2{
+        font-size: 3rem !important;
+
+    }
+    section #introduccion p{
+        font-size: 1.5rem;
+    }
+
+    section .funciones_pag_1 p, section .funciones_pag_2 p{
+        font-size: 1.4rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+   
+    section #introduccion{
+        justify-content: flex-start;
+        padding-top: 8% !important;
+    }
+
+    section #introduccion h2{
+        font-size: 2.4rem !important;
+    }
+
+    section .funciones_pag_1 p, section .funciones_pag_2 p{
+        font-size: 1.3rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    section #introduccion{
+        padding-top: 4% !important;
+    }
+
+    section #introduccion{
+        justify-content: flex-start;
+        padding-top: 8% !important;
+    }
+
+    section #introduccion h2{
+        font-size: 2.75rem !important;
+    }
+
+    section #introduccion p{
+        font-size: 1.5rem;
+    }
+}
+
+#map {
+	height: 500px;
+	width: 50%;
+}
+

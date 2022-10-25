@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../recursos/isologo.png" />
+    <link rel="stylesheet" href="../css/noso.css" />
+    <title>Centro Médico - Nosotros</title>
+</head>
+
+<body class="container">
+
+
+    <header> <img src="../recursos/logo-version-1.png" alt="logo" class="logo"></header>
+
+
+    <nav>
+        <li id="menu" onclick="desplegarMenu()"><u> Abrir Menu ↓</u></li>
+        <li class="nav_item"><a href="../inicio.html">Inicio</a></li>
+
+        <li id="cultivos" class="nav_item">
+            <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li id="consejos" class="nav_item">
+            <a href="especialidades.html">Especialidades</a>
+        </li>
+        <li id="ventas" class="nav_item">
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+    </nav>
+
+    <section>
+        <div class="info">
+            <div id="introduccion">
+                <h2>Centro Médico Argentino</h2>
+                <p>
+                    En Centro Médico Argentino le acercamos una solución centralizada para la realización de estudios y
+                    tratamientos médicos. La magnitud de nuestras instalaciones y la calidad de nuestros profesionales
+                    completan el balance necesario para lograr un servicio de excelencia que nos permite satisfacer
+                    todas
+                    las necesidades con un nivel de calidad superior.
+                </p>
+            </div>
+        </div>
+        <div class="mapa">
+            <h3>Nuestra ubicación</h3>
+            <div id="map"></div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div id="contacto">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../recursos/logo-face.png" alt="logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../recursos/logo-insta.png" alt="logo" /></a>
+            @CentroMedicoArgentino
+        </div>
+        <p id="descripcion_footer">
+            Puedes contactarnos a traves de nuestras redes sociales.
+        </p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+</html>
+<script src="../js/inicio.js"></script>
