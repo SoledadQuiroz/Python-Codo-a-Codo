@@ -5,33 +5,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Centro Médico Argentino</title>
+    <link rel="icon" href="recursos/isologo.png" />
+    <link rel="stylesheet" href="../css/especialidades.css" />
+    <title>Centro Médico - Especialidades</title>
 </head>
 
-<body>
-    <header class="header">
-        <nav>
-          <a class="TextoMenu" href="../index.html">Home</a>
-          <a class="TextoMenu" href="nosotros.html">Nosotros</a>
-          <a class="TextoMenu" href="contacto.html">Contacto</a>
-          <a class="TextoMenu" href="registro.html">Registro</a>
-          <a class="TextoMenu" href="especialidades.html">Especialidades</a>
-        </nav>
-      </header>
+<body onscroll="stickyNav()">
+    <header>
+        <img src="../recursos/logo-version-1.png" alt="logo" />
+    </header>
 
+    <nav>
+        <li id="menu" onclick="desplegarMenu()"><u> Abrir Menu ↓</u></li>
+        <li id="inicio" class="nav_item"><a href="../inicio.html">Inicio</a></li>
 
+        <li id="cultivos" class="nav_item">
+            <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li id="consejos" class="nav_item">
+            <a href="especialidades.html">Especialidades</a>
+        </li>
+        <li id="ventas" class="nav_item">
+            <a href="contacto.html">Contacto</a>
+        </li>
 
-    <section>
-        <div class="container">
-            <div class="titulopagina">Especialidades</div>
-            <div class="box">Contenido</div>
-        </div>
+    </nav>
+
+    <section class="cards">
+
+        <article class="tarjeta">
+            <a href="/pages/especialidades/laboratorio.html">
+                <figure class="thumbnail">
+                    <img src="/img/laboratorio.jpg" alt="img1">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Laboratirio de Análisis Clínicos</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/resonancia-1.jpg" alt="img2">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Resonancia Magnética</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/imagenes_odontologicas.jpg" alt="img3">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Imágenes Odontológicas</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/densitometria.jpg" alt="img4">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Densitometría Ósea</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/radiologia.jpg" alt="img5">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Radiología</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/cardiologia.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Estudios Cardiológicos</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/ecografias.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Ecografía</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/ginecologia.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Estudios Ginecológicos</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/citopatologia.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Citopatología</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/kinesiologia.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Kinesiología y Fisiatría</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/consultas_medicas.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Consultas Médicas</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <a href="#">
+                <figure class="thumbnail">
+                    <img src="/img/tomografia.jpg" alt="img6">
+                </figure>
+            </a>
+            <div class="tarjeta-content">
+                <h2>Tomografía Computada</h2>
+                <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Inventore odit dolorem, quae
+                    ullam veniam facere quo quis magnam ipsa consectetur saepe quisquam! Nostrum ipsum quas,
+                    mollitia aut vero similique fugiat?</p>
+            </div>
+        </article>
     </section>
+    <footer>
+        <div id="contacto">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../recursos/logo-face.png" alt="logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../recursos/logo-insta.png" alt="logo" /></a>
+            @CentroMedicoArgentino
+        </div>
+        <p id="descripcion_footer">
+            Puedes contactarnos a traves de nuestras redes sociales.
+        </p>
+    </footer>
 
-
-    <script src="https://kit.fontawesome.com/7d84d0461e.js" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>

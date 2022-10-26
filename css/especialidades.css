@@ -1,0 +1,132 @@
+/*------------------------------ IMPORTS ---------------------------------*/
+
+@import url("variables.css");
+@import url("reset.css");
+@import url("headerNav.css");
+@import url("footer.css");
+
+/*------------------------------ LAYOUT GENERAL ---------------------------------*/
+/* vista movil como predeterminada*/
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 1% 94%;
+    height: 400vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+nav #inicio{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*------------------------ SECTION ---------------------------------*/
+
+section{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 26.66% 26.66% 26.66% 2%;
+    height: 100%;
+    width: 100%;
+    background-color:var(--azul3);
+}
+
+.titulo1 {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.parrafo1 {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: 500;
+    font-style: italic;
+    color: hsl(0, 0%, 100%);
+    text-align: justify;
+}
+
+.parrafo2 {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: 100;
+    color: hsl(0, 0%, 100%);
+    text-align: justify;
+}
+
+.tarjeta a{
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content {
+    padding: 1.4em;
+}
+
+.tarjeta-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+}
+
+.tarjeta-content p {
+    font-size: 95%;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+#imagen1 {
+    display: block;
+    border: 0;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+#presentacion {
+    width: 50%;
+    background-color: rgb(149, 195, 89);
+    float: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#titulo_principal {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+/*Empezamos el flex box*/
+
+.tarjeta {
+    background: hsl(0, 0%, 100%);
+    margin-bottom: 2em;
+    width: 33%;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
