@@ -4,6 +4,7 @@
 @import url("reset.css");
 @import url("footer.css");
 @import url("header_nav.css");
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 .container {
     display: grid;
@@ -29,45 +30,10 @@ nav {
 
 section {
     grid-area: section;
+    font-family: 'Noto Sans', sans-serif !important;
 }
 
 
 footer {
     grid-area: footer;
-}
-
-
-.boton {
-    width: 100px;
-    height: 50px;
-}
-
-
-.box {
-    background-color: white;
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
-    border-radius: 1rem;
-}
-
-
-.TextoMenu {
-    color: black;
-    font-size: 1rem;
-    margin: 1rem 3rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-.TextoMenu:hover {
-    color: red
-}
-
-.titulopagina {
-    margin-top: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    color: black;
 }
