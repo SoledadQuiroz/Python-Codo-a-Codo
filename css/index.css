@@ -2,50 +2,13 @@
 
 @import url("variables.css");
 @import url("reset.css");
-<<<<<<< HEAD
-@import url("headerNav.css");
-@import url("footer.css");
-
-/*------------------------------ LAYOUT GENERAL ---------------------------------*/
-/* vista movil como predeterminada*/
-body{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 1% 94%;
-    height: 400vh;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-nav #inicio{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/*------------------------ SECTION ---------------------------------*/
-
-section{
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    grid-template-columns: 100%;
-    grid-template-rows: 18% 26.66% 26.66% 26.66% 2%;
-    height: 100%;
-    width: 100%;
-}
-
-/*------------------------ INTRODUCCION ---------------------------*/
-
-section #introduccion{
-=======
 @import url("footer.css");
 @import url("header_nav.css");
 
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 10% 100% 15%;
+    grid-template-rows: 10.5% 3% 100% 8%;
     gap: 0px 0px;
     grid-template-areas:
         "header"
@@ -65,14 +28,15 @@ nav {
 }
 
 section {
-    grid-area: section;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
     gap: 0px 0px;
     grid-template-areas:
         "info"
-        "mapa";
+        "nosotros"
+        "especialidades"
+        "contacto";
     width: 100%;
     height: 100%;
 }
@@ -81,20 +45,17 @@ section {
     grid-area: info;
 }
 
-.mapa {
-    grid-area: mapa;
-    padding: 10%;
+.nosotros {
+    grid-area: nosotros;
 }
 
-.mapa h3 {
-    color: var(--azul2);
-    font-weight: bolder;
-    line-height: 150%;
-    font-size: 2.2rem;
-    border-bottom: 2px solid lightgray;
-    padding-bottom: 10px;
+.especialidades {
+    grid-area: especialidades;
 }
 
+.contacto {
+    grid-area: contacto;
+}
 
 footer {
     grid-area: footer;
@@ -102,7 +63,6 @@ footer {
 
 
 #introduccion {
->>>>>>> Soledad
     display: flex;
     flex-direction: column;
     grid-column: 1/2;
@@ -116,11 +76,7 @@ footer {
     padding-right: 10%;
 }
 
-<<<<<<< HEAD
-#introduccion h2{
-=======
 #introduccion h2 {
->>>>>>> Soledad
     color: var(--azul2);
     font-weight: bolder;
     line-height: 150%;
@@ -129,22 +85,17 @@ footer {
     padding-bottom: 10px;
 }
 
-<<<<<<< HEAD
-#introduccion p{
-=======
 #introduccion p {
->>>>>>> Soledad
     font-size: 1rem;
     margin-top: 20px;
     line-height: 130%;
     font-family: "secundaria1";
 }
 
-<<<<<<< HEAD
 /*------------------------ ARTICLES ---------------------------*/
 
 /* ---------------Clase para los items de fondo verde*---------------*/
-.funciones_pag_1{
+.funciones_pag_1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,11 +106,11 @@ footer {
     text-align: center;
 }
 
-article img{
+article img {
     height: 250px;
 }
 
-.funciones_pag_1 h3 a{
+.funciones_pag_1 h3 a {
     font-family: "principal";
     font-weight: bold;
     text-decoration: underline;
@@ -168,7 +119,7 @@ article img{
     cursor: pointer;
 }
 
-.funciones_pag_1 p{
+.funciones_pag_1 p {
     margin-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -179,7 +130,7 @@ article img{
 }
 
 /* ---------------Clase para los items de fondo blanco---------------*/
-.funciones_pag_2{
+.funciones_pag_2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,11 +141,11 @@ article img{
     text-align: center;
 }
 
-article img{
+article img {
     height: 250px;
 }
 
-.funciones_pag_2 h3 a{
+.funciones_pag_2 h3 a {
     font-family: "principal";
     font-weight: bold;
     text-decoration: underline;
@@ -203,7 +154,7 @@ article img{
     cursor: pointer;
 }
 
-.funciones_pag_2 p{
+.funciones_pag_2 p {
     margin-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -211,21 +162,6 @@ article img{
     color: var(--azul2);
     line-height: 150%;
     font-size: 1.2rem;
-}
-/*------------------------------ MEDIA QUERIES ---------------------------------*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-    section #introduccion{
-        padding-top: 20%;
-    }
-
-    section .funciones_pag_1 p, section .funciones_pag_2 p{
-        font-size: 1.5rem;
-=======
-#map {
-    height: 80%;
-    width: 80%;
 }
 
 /*------------------------------ MEDIA QUERIES ---------------------------------*/
@@ -236,90 +172,31 @@ article img{
         grid-area: section;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 0px 0px;
         grid-template-areas:
             "info"
-            "mapa";
+            "nosotros"
+            "especialidades"
+            "contacto";
         width: 100%;
         height: 100%;
->>>>>>> Soledad
     }
 }
 
 /* Medium devices (portrait tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-<<<<<<< HEAD
-    section #introduccion{
-        justify-content: center;
-        padding-top: 0;
-    }
-
-    section #introduccion h2{
-        font-size: 3rem !important;
-
-    }
-    section #introduccion p{
-        font-size: 1.5rem;
-    }
-
-    section .funciones_pag_1 p, section .funciones_pag_2 p{
-        font-size: 1.4rem;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
-   
-    section #introduccion{
-        justify-content: flex-start;
-        padding-top: 8% !important;
-    }
-
-    section #introduccion h2{
-        font-size: 2.4rem !important;
-    }
-
-    section .funciones_pag_1 p, section .funciones_pag_2 p{
-        font-size: 1.3rem;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    section #introduccion{
-        padding-top: 4% !important;
-    }
-
-    section #introduccion{
-        justify-content: flex-start;
-        padding-top: 8% !important;
-    }
-
-    section #introduccion h2{
-        font-size: 2.75rem !important;
-    }
-
-    section #introduccion p{
-        font-size: 1.5rem;
-    }
-}
-
-#map {
-	height: 500px;
-	width: 50%;
-}
-
-=======
     section {
         grid-area: section;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 0px 0px;
         grid-template-areas:
             "info"
-            "mapa";
+            "nosotros"
+            "especialidades"
+            "contacto";
         width: 100%;
         height: 100%;
     }
@@ -333,13 +210,15 @@ article img{
     section {
         grid-area: section;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 0px 0px;
         grid-template-areas:
-            "info mapa";
+            "info"
+            "nosotros"
+            "especialidades"
+            "contacto";
         width: 100%;
         height: 100%;
     }
 }
->>>>>>> Soledad

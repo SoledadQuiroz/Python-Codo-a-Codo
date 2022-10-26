@@ -1,0 +1,113 @@
+/*------------------------------ IMPORTS ---------------------------------*/
+
+@import url("variables.css");
+@import url("reset.css");
+@import url("headerNav.css");
+@import url("footer.css");
+
+/*------------------------------ LAYOUT GENERAL ---------------------------------*/
+/* vista movil como predeterminada*/
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 1% 94%;
+    height: 400vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+nav #inicio{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#contacto{
+    display: flex !important;
+}
+
+footer {
+    grid-area: footer;
+}
+/*------------------------ SECTION ---------------------------------*/
+
+section{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 26.66% 26.66% 26.66% 2%;
+    height: 100%;
+    width: 100%;
+    background-color:var(--azul3);
+}
+
+.tarjeta a{
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content {
+    padding: 1.4em;
+}
+
+.tarjeta-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+    font-family: "principal";
+    color: var(--azul2);
+}
+
+/* animacion */
+
+.thumbnail-1 img:hover {
+    -webkit-transform:scale(1.4);
+    transform:scale(1.4);
+}
+.thumbnail-1 {
+    overflow:hidden;
+}
+/*----------------*/
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+/*flex box*/
+
+.tarjeta {
+    background: hsl(0, 0%, 100%);
+    margin-bottom: 1em;
+    width: 33%;
+}
+.tarjeta-esp {
+    background: hsl(0, 0%, 100%);
+    font-weight: normal;
+    font-family: "principal";
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 49%;
+    color: var(--azul2);
+}
+
+.tarjeta-content-esp{
+    margin-left: 1em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

@@ -2,14 +2,15 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Centro Médico Argentino</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="recursos/isologo.png" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Centro Médico - Inicio</title>
 </head>
 
+<<<<<<< HEAD
 <body>
     <header style="background-color:rgb(50, 159, 223);">
 
@@ -91,6 +92,89 @@
             <br>
         </div>
     </footer> -->
+=======
+<body class="container" onscroll="stickyNav()">
+    <header>
+        <img src="recursos/logo-version-1.png" alt="logo" />
+    </header>
+
+    <nav>
+        <li id="menu" onclick="desplegarMenu()"><u> Abrir Menu ↓</u></li>
+        <li class="nav_item"><a href="index.html">Inicio</a></li>
+
+        <li id="cultivos" class="nav_item">
+            <a href="pages/nosotros.html">Nosotros</a>
+        </li>
+        <li id="consejos" class="nav_item">
+            <a href="pages/especialidades.html">Especialidades</a>
+        </li>
+        <li id="ventas" class="nav_item">
+            <a href="pages/contacto.html">Contacto</a>
+        </li>
+
+    </nav>
+
+    <section>
+        <div class="info">
+            <div id="introduccion">
+                <h2>Centro Médico Argentino</h2>
+                <p>
+                    En Centro Médico Argentino le acercamos una solución centralizada para la realización de estudios y
+                    tratamientos médicos. La magnitud de nuestras instalaciones y la calidad de nuestros profesionales
+                    completan el balance necesario para lograr un servicio de excelencia que nos permite satisfacer
+                    todas
+                    las necesidades con un nivel de calidad superior.</p>
+
+            </div>
+        </div>
+        <div class="nosotros">
+            <article id="cultivos" class="funciones_pag_1">
+                <img src="recursos/isologo.png" alt="icono-cultivos" id="icono_cultivos" />
+                <h3>
+                    <a href="pages/nosotros.html" id="titulo_cultivos">Nosotros</a>
+                </h3>
+                <p>
+                    Somos una empresa en constante crecimiento reconocida a nivel internacional que desde hace 30 años
+                    apuesta al futuro con inversión, esfuerzo, equipamiento de última generación y la más cordial atención.
+                </p>
+            </article>
+        </div>
+        <div class="especialidades">
+            <article id="ventas" class="funciones_pag_2">
+                <img src="recursos/isologo.png" alt="icono-ventas" id="icono_ventas">
+                <h3><a href="pages/especialidades.html" id="titulo_ventas">Especialidades</a></h3>
+                <p>
+                    Día a día aspiramos a alcanzar y superar los valores de seriedad, transparencia, prestigio profesional,
+                    técnico y administrativo en cada servicio que ofrecemos, cuidando la salud de nuestros pacientes a
+                    través de una moderna y confortable estructura.
+                </p>
+            </article>
+        </div>
+        <div class="contacto">
+            <article id="consejos" class="funciones_pag_1">
+                <img src="recursos/isologo.png" alt="icono-user" id="icono_consejos" />
+                <h3><a href="pages/contacto.html" id="titulo_consejos">Contacto</a></h3>
+                <p>
+                    Contactate con Nosotros.
+                </p>
+            </article>
+        </div>
+
+
+    </section>
+    <footer>
+        <div id="contacto">
+            <a href="https://www.facebook.com/" target="_blank"><img src="recursos/logo-face.png" alt="logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="recursos/logo-insta.png" alt="logo" /></a>
+            @CentroMedicoArgentino
+        </div>
+        <p id="descripcion_footer">
+            Puedes contactarnos a traves de nuestras redes sociales.
+        </p>
+    </footer>
+    <script src="js/nav.js"></script>
+>>>>>>> Soledad
 </body>
 
 </html>
