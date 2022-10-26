@@ -73,7 +73,7 @@ figure {
 
 img {
     display: block;
-    border: ;
+    border: 0;
     width: 100%;
     height: auto;
 }
