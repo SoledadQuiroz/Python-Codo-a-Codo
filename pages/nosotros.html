@@ -10,10 +10,11 @@
     <title>Centro Médico - Nosotros</title>
 </head>
 
-<body onscroll="stickyNav()">
-    <header>
-        <img src="../recursos/logo-version-1.png" alt="logo" />
-    </header>
+<body class="container" onscroll="stickyNav()">
+
+
+    <header> <img src="../recursos/logo-version-1.png" alt="logo" class="logo"></header>
+
 
     <nav>
         <li id="menu" onclick="desplegarMenu()"><u> Abrir Menu ↓</u></li>
@@ -30,78 +31,53 @@
         </li>
 
     </nav>
-    <section id="contenido_principal">
-        <div id="imagen1"></div>
-        <article id="presentacion">
-            <h1 id="titulo_principal">Título del artículo</h1>
-            <p id="contenido_articulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, vitae quos rerum consectetur, sit aperiam pariatur quod ratione dolor dignissimos beatae praesentium modi vel voluptates, unde ex excepturi aut? Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus optio eum earum debitis corrupti veniam autem, explicabo praesentium laudantium consequatur commodi ducimus temporibus voluptatem, similique cum rem, ut magnam.</p>
-        </article>
-
-        <article id="texto_contenido">
-            <p id="contenido_segundo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat maiores laudantium placeat inventore accusantium distinctio ipsum eveniet perferendis, consectetur sit necessitatibus magnam repellendus temporibus libero nisi sed laboriosam, dignissimos voluptas? </p>
-        </article>
-        <div id="imagen2"></div>
-        <div id="destacado">
-            <p id="contenido_destacado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p></div>
-
-        <aside id="complementario">
-            <img id="img_aside" src="img/ideas.jpg" alt="ideas">
-        </aside>
-    </section>
 
     <section>
-        <div id="introduccion">
-            <h2>Centro Médico Argentino</h2>
-            <p>
-                En Centro Médico Argentino le acercamos una solución centralizada para la realización de estudios y
-                tratamientos médicos. La magnitud de nuestras instalaciones y la calidad de nuestros profesionales
-                completan el balance necesario para lograr un servicio de excelencia que nos permite satisfacer todas
-                las necesidades con un nivel de calidad superior.
-            </p>
-        </div>
+        <div class="info">
+            <div id="introduccion">
+                <h2>Centro Médico Argentino</h2>
+                <p>
+                    En Centro Médico Argentino le acercamos una solución centralizada para la realización de estudios y
+                    tratamientos médicos. La magnitud de nuestras instalaciones y la calidad de nuestros profesionales
+                    completan el balance necesario para lograr un servicio de excelencia que nos permite satisfacer
+                    todas
+                    las necesidades con un nivel de calidad superior.
+                <p> Somos una empresa en constante crecimiento reconocida a nivel internacional que desde hace 30 años
+                    apuesta al futuro con inversión, esfuerzo, equipamiento de última generación y la más cordial
+                    atención.</p>
+                <p>
+                    Día a día aspiramos a alcanzar y superar los valores de seriedad, transparencia, prestigio
+                    profesional,
+                    técnico y administrativo en cada servicio que ofrecemos, cuidando la salud de nuestros pacientes a
+                    través de una moderna y confortable estructura.</p>
+                </p>
 
-        <article id="cultivos" class="funciones_pag_1">
-            <img src="../recursos/isologo.png" alt="icono-cultivos" id="icono_cultivos" />
-            <h3>
-                <a href="../pages/nosotros.html" id="titulo_cultivos">Nosotros</a>
-            </h3>
-            <p>
-                Somos una empresa en constante crecimiento reconocida a nivel internacional que desde hace 30 años
-                apuesta al futuro con inversión, esfuerzo, equipamiento de última generación y la más cordial atención.
-            </p>
-        </article>
 
-        <article id="ventas" class="funciones_pag_2">
-            <img src="../recursos/isologo.png" alt="icono-ventas" id="icono_ventas">
-            <h3><a href="../pages/especialidades.html" id="titulo_ventas">Especialidades</a></h3>
-            <p>
-                Día a día aspiramos a alcanzar y superar los valores de seriedad, transparencia, prestigio profesional,
-                técnico y administrativo en cada servicio que ofrecemos, cuidando la salud de nuestros pacientes a
-                través de una moderna y confortable estructura.
-            </p>
-        </article>
-
-        <article id="consejos" class="funciones_pag_1">
-            <img src="../recursos/isologo.png" alt="icono-user" id="icono_consejos" />
-            <div id="map"></div>
-        </article>
-    
-
-        <footer>
-            <div id="contacto">
-                <a href="https://www.facebook.com/" target="_blank"><img src="../recursos/logo-face.png" alt="logo" /></a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../recursos/logo-insta.png" alt="logo" /></a>
-                @CentroMedicoArgentino
             </div>
-            <p id="descripcion_footer">
-                Puedes contactarnos a traves de nuestras redes sociales.
-            </p>
-        </footer>
+        </div>
+        <div class="mapa">
+            <h3>Nuestra ubicación</h3>
+            <div id="map"></div>
+        </div>
     </section>
+
+
+
+    <footer>
+        <div id="contacto">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../recursos/logo-face.png" alt="logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../recursos/logo-insta.png" alt="logo" /></a>
+            @CentroMedicoArgentino
+        </div>
+        <p id="descripcion_footer">
+            Puedes contactarnos a traves de nuestras redes sociales.
+        </p>
+    </footer>
     <script src="../js/nav.js"></script>
     <script src="../js/script.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 </body>
 
 </html>

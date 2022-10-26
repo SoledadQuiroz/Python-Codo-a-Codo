@@ -1,49 +1,64 @@
-
 /*------------------------------ IMPORTS ---------------------------------*/
 
 @import url("variables.css");
-@import url("headerNav.css");
+@import url("reset.css");
 @import url("footer.css");
+@import url("header_nav.css");
 
-/*------------------------------ LAYOUT GENERAL ---------------------------------*/
-/* vista movil como predeterminada*/
-body{
+.container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 1% 94%;
-    height: 400vh;
+    grid-template-rows: 20% 10% 100% 15%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "section"
+        "footer";
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 100%;
 }
 
-nav #inicio{
-    text-decoration: underline;
-    cursor: pointer;
+header {
+    grid-area: header;
 }
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
 
 .boton {
-  width: 100px;
-  height: 50px;
+    width: 100px;
+    height: 50px;
 }
 
 
 .box {
-  background-color: white;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem; 
-  border-radius: 1rem;
+    background-color: white;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
 }
 
 
-.TextoMenu{
-   color: black;
-   font-size: 1rem;
-   margin: 1rem 3rem;
-   text-align: center;
-   text-decoration: none;
+.TextoMenu {
+    color: black;
+    font-size: 1rem;
+    margin: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
 }
 
 .TextoMenu:hover {

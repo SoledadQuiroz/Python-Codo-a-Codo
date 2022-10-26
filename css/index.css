@@ -8,7 +8,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 10% 100% 15%;
+    grid-template-rows: 10.5% 3% 100% 8%;
     gap: 0px 0px;
     grid-template-areas:
         "header"
@@ -28,14 +28,15 @@ nav {
 }
 
 section {
-    grid-area: section;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
     gap: 0px 0px;
     grid-template-areas:
         "info"
-        "mapa";
+        "nosotros"
+        "especialidades"
+        "contacto";
     width: 100%;
     height: 100%;
 }
@@ -44,20 +45,17 @@ section {
     grid-area: info;
 }
 
-.mapa {
-    grid-area: mapa;
-    padding: 10%;
+.nosotros {
+    grid-area: nosotros;
 }
 
-.mapa h3 {
-    color: var(--azul2);
-    font-weight: bolder;
-    line-height: 150%;
-    font-size: 2.2rem;
-    border-bottom: 2px solid lightgray;
-    padding-bottom: 10px;
+.especialidades {
+    grid-area: especialidades;
 }
 
+.contacto {
+    grid-area: contacto;
+}
 
 footer {
     grid-area: footer;
@@ -94,9 +92,76 @@ footer {
     font-family: "secundaria1";
 }
 
-#map {
-    height: 80%;
-    width: 80%;
+/*------------------------ ARTICLES ---------------------------*/
+
+/* ---------------Clase para los items de fondo verde*---------------*/
+.funciones_pag_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: var(--azul3);
+    text-align: center;
+}
+
+article img {
+    height: 250px;
+}
+
+.funciones_pag_1 h3 a {
+    font-family: "principal";
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--fuenteAlt);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.funciones_pag_1 p {
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "principal";
+    color: var(--fuenteAlt);
+    line-height: 150%;
+    font-size: 1.1rem;
+}
+
+/* ---------------Clase para los items de fondo blanco---------------*/
+.funciones_pag_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+article img {
+    height: 250px;
+}
+
+.funciones_pag_2 h3 a {
+    font-family: "principal";
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--azul3);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.funciones_pag_2 p {
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "principal";
+    color: var(--azul2);
+    line-height: 150%;
+    font-size: 1.2rem;
 }
 
 /*------------------------------ MEDIA QUERIES ---------------------------------*/
@@ -107,11 +172,13 @@ footer {
         grid-area: section;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 0px 0px;
         grid-template-areas:
             "info"
-            "mapa";
+            "nosotros"
+            "especialidades"
+            "contacto";
         width: 100%;
         height: 100%;
     }
@@ -123,11 +190,13 @@ footer {
         grid-area: section;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 0px 0px;
         grid-template-areas:
             "info"
-            "mapa";
+            "nosotros"
+            "especialidades"
+            "contacto";
         width: 100%;
         height: 100%;
     }
@@ -141,11 +210,14 @@ footer {
     section {
         grid-area: section;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 0px 0px;
         grid-template-areas:
-            "info mapa";
+            "info"
+            "nosotros"
+            "especialidades"
+            "contacto";
         width: 100%;
         height: 100%;
     }
