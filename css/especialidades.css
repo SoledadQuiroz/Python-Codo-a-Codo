@@ -27,6 +27,14 @@ nav {
     grid-area: nav;
 }
 
+#contacto {
+    display: flex;
+}
+
+#contacto p {
+    margin-left: 5px !important;
+}
+
 section {
     grid-area: section;
     display: grid;

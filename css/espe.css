@@ -21,7 +21,13 @@ nav #inicio{
     text-decoration: underline;
     cursor: pointer;
 }
+#contacto{
+    display: flex !important;
+}
 
+footer {
+    grid-area: footer;
+}
 /*------------------------ SECTION ---------------------------------*/
 
 section{
