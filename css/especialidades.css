@@ -5,6 +5,7 @@
 @import url("footer.css");
 @import url("header_nav.css");
 
+
 .container {
     display: grid;
     grid-template-columns: 100%;
