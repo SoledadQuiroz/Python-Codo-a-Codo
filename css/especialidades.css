@@ -5,16 +5,10 @@
 @import url("footer.css");
 @import url("header_nav.css");
 
-
-#contacto{
-    display:flex;
-}
-
-
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 16.5% 10% 100% 12.5%;
+    grid-template-rows: 16.5% 10% 80% 12.5%;
     gap: 0px 0px;
     grid-template-areas:
         "header"
@@ -78,9 +72,6 @@ section {
 footer {
     grid-area: footer;
 }
-
-
-
 
 .tarjetas a {
     color: hsl(0, 0%, 80%);

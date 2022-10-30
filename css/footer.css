@@ -13,14 +13,14 @@ footer {
     font-family: "principal";
     font-size: 1.3rem;
     color: var(--fuenteAlt);
-    align-content: center; 
-  justify-items: center; 
-  align-items: center; 
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .logo {
     grid-area: logo;
-    
+
 }
 
 .redes {
