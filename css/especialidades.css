@@ -1,0 +1,210 @@
+/*------------------------------ IMPORTS ---------------------------------*/
+
+@import url("variables.css");
+@import url("reset.css");
+@import url("footer.css");
+@import url("header_nav.css");
+
+
+#contacto{
+    display:flex;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.5% 10% 100% 12.5%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "section"
+        "footer";
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 1px 0px;
+    grid-template-areas:
+        "tarjeta"
+        "tarjeta1" 
+        "tarjeta2"
+        "tarjeta3" 
+        "tarjeta4" 
+        "tarjeta5";
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta {
+    grid-area: tarjeta;
+}
+
+.tarjeta1 {
+    grid-area: tarjeta1;
+}
+
+.tarjeta2 {
+    grid-area: tarjeta2;
+}
+
+.tarjeta3 {
+    grid-area: tarjeta3;
+}
+
+.tarjeta4 {
+    grid-area: tarjeta4;
+}
+
+.tarjeta5 {
+    grid-area: tarjeta5;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+.tarjetas a {
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+.tarjetas a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content {
+    padding: 1.4em;
+}
+
+.tarjeta-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+    font-family: "principal";
+    color: var(--azul2);
+}
+
+/* animacion */
+
+.thumbnail-1 img:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.thumbnail-1 {
+    overflow: hidden;
+}
+
+/*----------------*/
+
+figure {
+    margin: 5px;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    section {
+        grid-area: section;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        gap: 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tarjeta {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .tarjeta1 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .tarjeta2 {
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .tarjeta3 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .tarjeta4 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .tarjeta5 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+}
+
+
+/* Medium devices (portrait tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    section {
+        grid-area: section;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+        gap: 1px 1px;
+        grid-template-areas:
+            "tarjeta tarjeta1 tarjeta2"
+            "tarjeta3 tarjeta4 tarjeta5";
+        width: 100%;
+        height: 100%;
+    }
+
+    .tarjeta {
+        grid-area: tarjeta;
+    }
+
+    .tarjeta1 {
+        grid-area: tarjeta1;
+    }
+
+    .tarjeta2 {
+        grid-area: tarjeta2;
+    }
+
+    .tarjeta3 {
+        grid-area: tarjeta3;
+    }
+
+    .tarjeta4 {
+        grid-area: tarjeta4;
+    }
+
+    .tarjeta5 {
+        grid-area: tarjeta5;
+    }
+
+}

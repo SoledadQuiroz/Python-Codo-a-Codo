@@ -1,0 +1,29 @@
+:root {
+    /*------------------- PALETA DE COLORES ---------------------*/
+
+    /* paleta 1 */
+    --azul1: #5fa8d3;
+    --azul2: #1b4965;
+    --azul3: #62b6cb;
+    --azul4: #bee9e8;
+    --azul: #5fa8d3;
+
+    /* colores fuentes */
+    --fuentePrin: black;
+    --fuenteAlt: white;
+    --gris1: #747474;
+
+    /*------------------- SOMBRAS ---------------------*/
+    --sombra1: 5px 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------ FUENTES ---------------------------------*/
+@font-face {
+    font-family: "principal";
+    src: url("../recursos/fuentes/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "secundaria1";
+    src: url("../recursos/fuentes/Roboto-Medium.ttf");
+}

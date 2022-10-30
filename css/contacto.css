@@ -1,0 +1,39 @@
+/*------------------------------ IMPORTS ---------------------------------*/
+
+@import url("variables.css");
+@import url("reset.css");
+@import url("footer.css");
+@import url("header_nav.css");
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 100% 15%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "section"
+        "footer";
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+
+footer {
+    grid-area: footer;
+}

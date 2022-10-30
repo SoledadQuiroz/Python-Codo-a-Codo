@@ -1,0 +1,41 @@
+/* -------------------- FOOTER ------------------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "logo redes";
+    width: 100%;
+    height: 100%;
+    background: var(--azul2);
+    font-family: "principal";
+    font-size: 1.3rem;
+    color: var(--fuenteAlt);
+    align-content: center; 
+  justify-items: center; 
+  align-items: center; 
+}
+
+.logo {
+    grid-area: logo;
+    
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.redes img {
+    height: 30px;
+}
+
+footer #descripcion_footer {
+    font-size: 0.8rem;
+    text-align: start;
+}
