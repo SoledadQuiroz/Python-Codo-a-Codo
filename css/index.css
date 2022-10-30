@@ -3,6 +3,7 @@
 @import url("variables.css");
 @import url("footer.css");
 @import url("header_nav.css");
+@import url("reset.css");
 
 .container {
     display: grid;
