@@ -1,7 +1,6 @@
 /*------------------------------ IMPORTS ---------------------------------*/
 
 @import url("variables.css");
-@import url("reset.css");
 @import url("footer.css");
 @import url("header_nav.css");
 
@@ -43,6 +42,7 @@ section {
 
 .info {
     grid-area: info;
+    background-image: url("../recursos/Background.png");
 }
 
 .nosotros {
