@@ -37,10 +37,10 @@ section {
     gap: 1px 0px;
     grid-template-areas:
         "tarjeta"
-        "tarjeta1" 
+        "tarjeta1"
         "tarjeta2"
-        "tarjeta3" 
-        "tarjeta4" 
+        "tarjeta3"
+        "tarjeta4"
         "tarjeta5";
     width: 100%;
     height: 100%;

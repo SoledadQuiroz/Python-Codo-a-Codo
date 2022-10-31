@@ -70,6 +70,15 @@ figure {
     height: auto;
 }
 
+h2 {
+    font-family: "principal";
+    text-align: start;
+    color: var(--azul2);
+    font-weight: bolder;
+    line-height: 150%;
+    font-size: 1.8rem;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     section {
