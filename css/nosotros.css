@@ -5,7 +5,7 @@
 @import url("footer.css");
 @import url("header_nav.css");
 
-.container {
+body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 10% 100% 15%;
@@ -71,7 +71,6 @@ footer {
     grid-column: 1/2;
     grid-row: 1/2;
     justify-content: flex-start;
-    align-items: center;
     font-family: "principal";
     text-align: start;
     padding-top: 10%;
@@ -82,6 +81,7 @@ footer {
 #introduccion h2 {
     color: var(--azul2);
     font-weight: bolder;
+    text-align: start;
     line-height: 150%;
     font-size: 2.2rem;
     border-bottom: 2px solid lightgray;

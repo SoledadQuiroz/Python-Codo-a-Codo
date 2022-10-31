@@ -5,7 +5,7 @@
 @import url("header_nav.css");
 @import url("reset.css");
 
-.container {
+body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10.5% 3% 100% 8%;
@@ -125,7 +125,7 @@ article img {
     font-family: "principal";
     color: var(--fuenteAlt);
     line-height: 150%;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .funciones_pag_2 {
@@ -159,7 +159,7 @@ article img {
     font-family: "principal";
     color: var(--azul2);
     line-height: 150%;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /*------------------------------ MEDIA QUERIES ---------------------------------*/

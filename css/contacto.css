@@ -6,7 +6,7 @@
 @import url("header_nav.css");
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-.container {
+body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 10% 100% 15%;

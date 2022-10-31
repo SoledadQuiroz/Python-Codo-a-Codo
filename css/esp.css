@@ -6,7 +6,7 @@
 @import url("header_nav.css");
 
 
-.container {
+body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 16.5% 10% 100% 22%;
