@@ -47,9 +47,10 @@ section {
 .mapa {
     grid-area: mapa;
     padding: 10%;
+    font-family: "principal";
 }
 
-.mapa h3 {
+.mapa h2 {
     color: var(--azul2);
     font-weight: bolder;
     line-height: 150%;
@@ -72,7 +73,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     font-family: "principal";
-    text-align: center;
+    text-align: start;
     padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;

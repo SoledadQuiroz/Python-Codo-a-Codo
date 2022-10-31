@@ -9,7 +9,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 10% 100% 15%;
+    grid-template-rows: 20% 10% 120% 15%;
     gap: 0px 0px;
     grid-template-areas:
         "header"
@@ -36,4 +36,13 @@ section {
 
 footer {
     grid-area: footer;
+}
+
+.titulopagina{
+    font-family: "principal";
+    text-align: center;
+    color: var(--azul2);
+    font-weight: bolder;
+    line-height: 150%;
+    font-size: 2rem;
 }

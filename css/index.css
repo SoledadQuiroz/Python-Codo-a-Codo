@@ -62,7 +62,6 @@ footer {
     grid-area: footer;
 }
 
-
 #introduccion {
     display: flex;
     flex-direction: column;
@@ -95,7 +94,6 @@ footer {
 
 /*------------------------ ARTICLES ---------------------------*/
 
-/* ---------------Clase para los items de fondo verde*---------------*/
 .funciones_pag_1 {
     display: flex;
     flex-direction: column;
@@ -130,7 +128,6 @@ article img {
     font-size: 1.1rem;
 }
 
-/* ---------------Clase para los items de fondo blanco---------------*/
 .funciones_pag_2 {
     display: flex;
     flex-direction: column;
