@@ -37,10 +37,10 @@
         <div class="titulopagina">Contacto</div>
         <div class="box">
             <div class="container">
-                <form id="formulario">
+                <form name="formulario" id="formulario">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                             placeholder="some@domain.com">
                         <small id="emailHelp" class="form-text text-muted">Nunca usaremos su correo electrónico para
                             publicidad.</small>
@@ -62,7 +62,8 @@
                         <label for="exampleInputPassword1">Consulta</label>
                         <input type="text" class="form-control" id="messagecontacto" placeholder="Haga su consulta...">
                     </div>
-                    <button type="submit" class="boton btn btn-primary">Enviar</button>
+
+                    <td colspan="2" align="center"><input type="button" value="Enviar" onclick="validar()"></td>
                 </form>
             </div>
         </div>
@@ -71,13 +72,14 @@
 
 
     <footer>
-       <div class="logo">
+        <div class="logo">
             <img src="../recursos/logo-blanco.png" alt="logo-pagina">
         </div>
         <div class="redes">
             <a href="https://api.whatsapp.com/send/?phone=%2B5491111111111&text=Hola%2C+quiero+un+turno.&type=phone_number&app_absent=0"
                 target="_blank"><img src="../recursos/ico/whatsapp.png" alt="logo" /></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../recursos/ico/logo-face.png" alt="logo" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../recursos/ico/logo-face.png"
+                    alt="logo" /></a>
             <a href="https://www.instagram.com/" target="_blank">
                 <img src="../recursos/ico/logo-insta.png" alt="logo" /></a>
             <p id="descripcion_footer">Av. Córdoba 2351, C1028 CABA <br> Centro Médico Argentino
@@ -85,7 +87,35 @@
         </div>
 
     </footer>
+
     <script src="../js/nav.js"></script>
+
+
+    <script>function validar() {
+            var todo_correcto = true;
+
+            if (document.getElementById('namecontacto').value.length < 2) {
+                todo_correcto = false;
+            }
+
+            if (isNaN(document.getElementById('dnicontacto').value)) {
+                todo_correcto = false;
+            }
+            var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
+            var email = document.formulario.email.value;
+            if (!expresion.test(email)) {
+                todo_correcto = false;
+            }
+
+            if (!todo_correcto) {
+                alert('Algunos campos no están correctos, vuelva a revisarlos');
+            }
+
+            return todo_correcto;
+        }
+
+    </script>
+
 </body>
 
 </html>
